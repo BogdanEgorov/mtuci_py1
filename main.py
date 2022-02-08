@@ -3,6 +3,12 @@ my_weight = 65
 strides_count = 1000
 activity_time = 60
 
+def palindrome(word):
+    if str(word) == str(word)[::-1] :
+        print("Это слово Палиндром")
+    else:
+        print("Это слово не палиндром!")
+
 stride = my_height / 4 + 0.37
 s = strides_count / activity_time
 v = s / activity_time
@@ -16,3 +22,6 @@ elif (distance < 2):
     print("Вы прошли меньше 2 км. Уже устали?")
 
 print("Пройденная дистанция: " + str(s) + " Количество сожженных калорий: " + str(consumption_energy) + " Количество пройденных км: " + str(distance))
+
+word = input("Введите слово на проверку палиндрома: ")
+print(palindrome(word))
